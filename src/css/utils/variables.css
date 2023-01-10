@@ -1,5 +1,5 @@
 :root{
-    
+
 /* Color styles */
 --white-site: rgba(255, 253, 251, 1);
 --black-site: rgba(14, 14, 14, 1);
@@ -16,5 +16,16 @@
 --text: 14px;
 --bold-text: 14px;
 --text-legend: 12px;
+
+/* Polices de caractère */
+--font-website: 'Poppins', sans-serif;
+
+/* Espaces */
+  --space1x: 8px;
+  --space2x: 16px;
+  --space3x: 24px;
+  --space4x: 48px;
+  --space5x: 80px;
+  --space6x: 150px;
 
 }
