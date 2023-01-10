@@ -1,0 +1,106 @@
+/* Pour construire le menu en mobile : 
+On construit le menu tel qu'il sera une fois ouvert.
+On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le menu. */
+.menu {
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  display: flex;
+  position: fixed;
+  top: 0; bottom: 0;
+  left: 0; right : 0;
+  background-color: var(--black-site);
+  transition: all .4s ease-in-out;
+}
+  
+/* On se sert de Javascript pour ajouter une classe sur le menu lorsqu'on clique sur le bouton de menu pour le faire apparaître */
+.menu--open {
+  visibility: visible;
+  opacity: 1;
+  background-color: var(--black-site);
+  width: 100%;
+  margin-top: 81px;
+}
+
+/* Mise en forme des éléments du menu */
+.menu__list {
+  margin-top: 5vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  color: var(--white--text);
+}
+
+.menu__item {
+  margin-top: 15%;
+}
+
+.menu__link {
+  color: var(--white-site);
+  text-decoration: none;
+}
+  /* Mise en forme du bouton de menu "Hamburger" */
+.menu-btn {
+  position: relative;
+  z-index: 3;
+  width: 30px; 
+  background: var(--white-site); 
+  border: 0;
+}
+  
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
+  content: '';
+  background: var(--black-site);
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 10;
+  transition: all .4s ease-in-out;
+}
+  
+.menu-btn__bar::before {
+  top: -10px;
+}
+  
+.menu-btn__bar::after {
+  top: 10px;
+}
+
+/* Technique pour transformer les 3 barres du bouton de menu en croix
+Ne pas oublier d'ajouter une transition plus haut pour l'animation */
+.menu-btn--open .menu-btn__bar,
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+  transform: rotate(135deg);
+}
+
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+.menu-btn:not(.menu-btn--open) .menu-btn__bar,
+.menu-btn:not(.menu-btn--open) .menu-btn__bar::before,
+.menu-btn:not(.menu-btn--open) .menu-btn__bar::after {
+  background-color: var(--black-site);
+}
+
+.menu__item_primary {
+  color: var(--white-site);
+  font-family: var(--font-website);
+  font-size: var(--heading-2);
+  font-weight: 500;
+  padding-top: 2rem;
+}
+
+.menu__item_secondary {
+  color: var(--white-site);
+  font-family: var(--font-website);
+  font-size: var(--heading-3);
+  display: inline-block;
+  padding-top: 3rem;
+  margin-left: 15%;
+}

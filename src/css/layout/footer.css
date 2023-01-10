@@ -2,6 +2,7 @@
     background-color: var(--black-site);    
     width: 100%;
     padding: var(--space3x) var(--space3x);
+    margin-top: 5rem;
 }
 
 .footer__lien-title {
