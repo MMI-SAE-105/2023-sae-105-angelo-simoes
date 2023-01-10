@@ -11,7 +11,7 @@
 
 .footer__title {
     color: var(--white-site);
-    font-weight: 500;
+    font-weight: 700;
     margin: 1rem auto 2rem auto;
     font-size: var(--s-i-t-e--t-i-t-l-e);
     font-family: var(--font-website);
@@ -28,6 +28,7 @@
     color: var(--white-site);
     font-family: var(--font-website);
     font-size: var(--text);
+    font-weight: 500s;
 }
 
 .footer__subheading {
