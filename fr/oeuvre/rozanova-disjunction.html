@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disjunction of forms de Olga Rozanova - Futurist.</title>
+    <title>Disjunction of forms d'Olga Rozanova - Futurist.</title>
 <!-- Déclaration de la feuille de style -->
     <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
@@ -13,30 +13,37 @@
 </head>
 <body>
 <!-- En-tête de la page -->
-    <header>
-        <div>
-            <a href="/index.html">
-                <h3>Futurist.</h3>
-            </a>   
-        </div>
-        <div>
-            <button></button> 
-        <!-- Menu principal -->
-            <nav>
-                <ul>
-                    <li><a href="/fr/cubo-futurisme.html">Le mouvement : Cubo-futurisme</a></li>
-                    <li><a href="/fr/artiste/aristarkh-lentulov.html">Aristarkh Lentoulov</a></li>
-                    <li><a href="/fr/artiste/nathalie-gontcharoff.html">Nathalie Gontcharoff</a></li>
-                    <li><a href="/fr/artiste/alexandra-exter.html">Alexandra Exter</a></li>
-                    <li><a href="/fr/artiste/olga-rozanova.html">Olga Rozanova</a></li>
-                    <li><a href="/fr/information.html">Informations</a></li>
-                    <li><a href="/fr/contact.html">Contact</a></li>
-                    <li><a href="#"><img src="#" alt="icone british"></a></li>
-                </ul>
-            </nav>
-        <!-- Fin du menu principal -->
-        </div>      
-    </header>
+<header class="header container">
+
+    <div class="header__logo">
+        <a class="header__link-logo" href="/index.html">
+            <h3 class="header__logo-text">Futurist.</h3>
+        </a>   
+    </div>
+    <div class="header__end">
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+        </button>
+    <!-- Menu principal -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/cubo-futurisme.html">Le mouvement : Cubo-futurisme</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/artiste/aristarkh-lentulov.html">Aristarkh Lentoulov</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/artiste/nathalie-gontcharoff.html">Nathalie Gontcharoff</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/artiste/alexandra-exter.html">Alexandra Exter</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/fr/artiste/olga-rozanova.html">Olga Rozanova</a></li>
+                <li class="menu__item_secondary"><a class="menu__link" href="/fr/information.html">Informations</a></li>
+                <li class="menu__item_secondary"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
+                <li><a href="/en/artiste/alexandra-exter.html"><img class="header__logo-lang" src="/public/img/autres/Uk.webp" alt="Le drapeau UK"></a></li>
+            </ul>
+        </nav>
+    <!-- Fin du menu principal -->
+    </div> 
+
+    
+</header>
 <!-- Fin de l'en-tête de page -->
 
 <main>
