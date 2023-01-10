@@ -13,11 +13,17 @@ Flex sert à positionner les éléments de l'en-tête (header__start et header__
     display: flex;
     justify-content: space-between;
     transition: all .3s ease-in-out;
+    vertical-align: middle;
   }
   
   .header__end {
-    display: flex;
+    position: absolute;
     gap: var(--space2x);
+    display: flex;
+    right: 0;
+    margin-top: 40px;
+    margin-right: 20px;
+
   }
   
   .header__link-logo{
@@ -25,12 +31,15 @@ Flex sert à positionner les éléments de l'en-tête (header__start et header__
     color: var(--black-site);
   }
   
-  .header__logo {
+  .header__logo-text {
     font-family: var(--font-website);
     font-size: var(--s-i-t-e--t-i-t-l-e);
     font-weight: 700;
-    margin-top: 20px;
     text-align: center;
+  }
+
+  .header__logo{
+width: 100%;
   }
 
   
