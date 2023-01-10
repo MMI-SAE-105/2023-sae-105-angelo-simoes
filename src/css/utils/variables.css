@@ -1,0 +1,20 @@
+:root{
+    
+/* Color styles */
+--white-site: rgba(255, 253, 251, 1);
+--black-site: rgba(14, 14, 14, 1);
+--grey-text: rgba(234, 234, 234, 1);
+--gris-legende: rgba(88, 88, 88, 1);
+
+/* Text-size styles */
+--s-i-t-e--t-i-t-l-e: 28px;
+--heading-page: 24px;
+--bouton: 12px;
+--heading-3: 14px;
+--heading-2: 16px;
+--entete--text: 16px;
+--text: 14px;
+--bold-text: 14px;
+--text-legend: 12px;
+
+}
