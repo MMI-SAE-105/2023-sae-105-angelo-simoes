@@ -18,5 +18,20 @@
     padding-bottom: 5px;
 }
 
+.contact__form-button {
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+    font-size: var(--bouton);
+    font-family: var(--font-website);
+    font-weight: 700;
+    margin-left: 70%;
+    color: var(--white-site);
+    background-color: var(--black-site);
+    border-radius: 10px;
+    border: 1px solide var(--black-site);
+    text-align: center;
+    cursor: pointer;
+}
+
 
 
