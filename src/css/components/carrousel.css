@@ -37,6 +37,12 @@
       }
       .carrousel-card__img-retouch{
         border-radius: 5px;
+        height: 400px;
+        width: 320px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
       }
     
       .carrousel-card__caption{
