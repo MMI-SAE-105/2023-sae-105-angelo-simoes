@@ -18,3 +18,16 @@
     color: var(--black-site);
     font-weight: 400;
   }
+
+  .article__subheading {
+    font-family: var(--font-website);
+    color: var(--black-site);
+    font-size: var(--heading-2);
+  }
+
+  .article__img-caption {
+    color: var(--gris-legende);
+    font-family: var(--font-website);
+    font-size: var(--text-legend);
+    text-align: center;
+  }

@@ -52,3 +52,7 @@ uniquement accessible aux lecteurs vocaux (sr = screen reader) */
   white-space: nowrap;
   border: 0;
 }
+
+.padding-bottom {
+  padding-bottom: 2rem;
+}
