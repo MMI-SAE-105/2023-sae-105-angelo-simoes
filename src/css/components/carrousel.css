@@ -63,3 +63,7 @@
         font-size: var(--heading-2);
         font-weight: 500;
       }
+
+      .carrousel-card__link{
+        color: var(--white-site);
+      }
