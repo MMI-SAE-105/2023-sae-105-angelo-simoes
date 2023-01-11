@@ -58,10 +58,14 @@
         
         <h2 class="article__subheading">Quelques unes de ses oeuvres</h2>
         <p class="article__text">Voici une liste des oeuvres que vous pouvez retrouver à notre exposition.</p>
-        <div x-data="{}">
-            <div class="carrousel_parent-ecrans">
+        <div x-data="{hrefCourant:'#ecran-1',}">
+            <div class="carrousel_parent-ecrans"  x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+            [...$refs.parent.children]
+            .find(e=>e.getBoundingClientRect().x>=0)
+            .id">
                 <div id="ecran-1" class="carrousel_ecran">
                     <figure>
+                        <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="Carte avant"><img src="/public/img/autres/arrow-left.svg" alt="flèche gauche"></button><button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="Carte siivante"><img src="/public/img/autres/arrow-right.svg" alt="flèche droite"></button>
                         <div class="carrousel-card__img">
                             <img class="carrousel-card__img-retouch" src="/public/img/oeuvre/oeuvre-page/larianov.webp" alt="Portrait of Larianov (1912-1913)">
                         </div>
