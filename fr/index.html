@@ -52,71 +52,70 @@
       const resp = await fetch('/src/data/card-home.json');
       return await resp.json();
     }}">
-    <h2 class="article__header-text">Retrouvez toutes les informations ici&thinsp;! </h2>
+        <h2 class="article__header-text">Retrouvez toutes les informations ici&thinsp;! </h2>
 
-    <template x-for="card in cards" :key="card.id">
-        <article class="section__card card">    
-            <div class="card__img">
-                <img :src="card.picture" :alt="card.picture_desc">
-            </div>
+        <template x-for="card in cards" :key="card.id">
+            <article class="section__card card">    
+                <div class="card__img">
+                    <img :src="card.picture" :alt="card.picture_desc">
+                </div>
 
-            <div class="card__caption">
-                <h1 class="card__title" x-text="card.title"></h1>
-                <p class="card__excerpt" x-text="card.excerpt"></p>
-                <a class="card__link" :href="card.link">Plus d'info</a>
-            </div>
-        </article>
-    </template>
+                <div class="card__caption">
+                    <h1 class="card__title" x-text="card.title"></h1>
+                    <p class="card__excerpt" x-text="card.excerpt"></p>
+                    <a class="card__link uppercase" :href="card.link">Plus d'info</a>
+                </div>
+            </article>
+        </template>
+    </section>
 
-    <div x-data="{}">
-        <div class="carrousel_parent-ecrans">
-            <div id="ecran-1" class="carrousel_ecran">
-                <figure>
-                    <div class="carrousel-card__img">
-                        <img class="carrousel-card__img-retouch" src="/public/img/artiste/alexandra-exter.webp" alt="Alexandra Exter">
-                    </div>
-                    <div class="carrousel-card__caption">
-                        <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="/fr/artiste/alexandra-exter.html">Alexandra Exter</a></h3>   
-                    </div>
-                </figure>
-            </div>
-            
-            <div id="ecran-2" class="carrousel_ecran">
-                <figure>
-                    <div class="carrousel-card__img">
-                        <img class="carrousel-card__img-retouch" src="/public/img/artiste/aristarkh-lentulov.webp" alt="Aristarkh Lentoulov">
-                    </div>
-                    <div class="carrousel-card__caption">
-                        <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="/fr/artiste/aristarkh-lentulov.html">Aristarkh Lentoulov</a></h3>  
-                    </div>
-                </figure>
-            </div>
-
-            <div id="ecran-3" class="carrousel_ecran">
-                <figure>
-                    <div class="carrousel-card__img">
-                        <img class="carrousel-card__img-retouch" src="/public/img/artiste/nathalie-gontcharoff.webp" alt="Nathalie Gontcharoff">
-                    </div>
-                    <div class="carrousel-card__caption">
-                        <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="/fr/artiste/nathalie-gontcharoff.html">Nathalie Gontcharoff</a></h3>   
-                    </div>
-                </figure>
-            </div>
-
-            <div id="ecran-4" class="carrousel_ecran">
-                <figure>
-                    <div class="carrousel-card__img">
-                        <img class="carrousel-card__img-retouch" src="/public/img/artiste/olga-rozanova.webp" alt="Olga Rozanova">
-                    </div>
-                    <div class="carrousel-card__caption">
-                        <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="/fr/artiste/olga-rozanova.html">Olga Rozanova</a></h3>   
-                    </div>
-                </figure>
-            </div>
+<div x-data="{}">
+    <div class="carrousel_parent-ecrans">
+        <div id="ecran-1" class="carrousel_ecran">
+            <figure>
+                <div class="carrousel-card__img">
+                    <img class="carrousel-card__img-retouch" src="/public/img/artiste/alexandra-exter.webp" alt="Alexandra Exter">
+                </div>
+                <div class="carrousel-card__caption">
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="/fr/artiste/alexandra-exter.html">Alexandra Exter</a></h3>   
+                </div>
+            </figure>
         </div>
-      </div>
+        
+        <div id="ecran-2" class="carrousel_ecran">
+            <figure>
+                <div class="carrousel-card__img">
+                    <img class="carrousel-card__img-retouch" src="/public/img/artiste/aristarkh-lentulov.webp" alt="Aristarkh Lentoulov">
+                </div>
+                <div class="carrousel-card__caption">
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="/fr/artiste/aristarkh-lentulov.html">Aristarkh Lentoulov</a></h3>  
+                </div>
+            </figure>
+        </div>
 
-</section>
+        <div id="ecran-3" class="carrousel_ecran">
+            <figure>
+                <div class="carrousel-card__img">
+                    <img class="carrousel-card__img-retouch" src="/public/img/artiste/nathalie-gontcharoff.webp" alt="Nathalie Gontcharoff">
+                </div>
+                <div class="carrousel-card__caption">
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="/fr/artiste/nathalie-gontcharoff.html">Nathalie Gontcharoff</a></h3>   
+                </div>
+            </figure>
+        </div>
+
+        <div id="ecran-4" class="carrousel_ecran">
+            <figure>
+                <div class="carrousel-card__img">
+                    <img class="carrousel-card__img-retouch" src="/public/img/artiste/olga-rozanova.webp" alt="Olga Rozanova">
+                </div>
+                <div class="carrousel-card__caption">
+                    <h3 class="carrousel-card__title"><a class="carrousel-card__link" href="/fr/artiste/olga-rozanova.html">Olga Rozanova</a></h3>   
+                </div>
+            </figure>
+        </div>
+    </div>
+  </div>
 
 </main>
 
