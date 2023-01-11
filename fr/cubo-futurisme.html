@@ -93,7 +93,11 @@
 
         <h2 class="article__subheading">Retrouvez ces artistes à notre exposition</h2>
         
-        <div x-data="{}">
+        <div x-data="{hrefCourant:'#ecran-1',}">
+            <div class="carrousel_parent-ecrans"  x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+
+            [...$refs.parent.children]
+            .find(e=>e.getBoundingClientRect().x>=0)
+            .id">
             <div class="carrousel_parent-ecrans">
                 <div id="ecran-1" class="carrousel_ecran">
                     <figure>

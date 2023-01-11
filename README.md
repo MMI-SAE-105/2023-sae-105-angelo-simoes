@@ -4,11 +4,11 @@
 - URL du site : https://futurist.angelo-simoes.fr/
 - URL FIGMA : https://www.figma.com/file/wQIGijVh9YpZWZPvn9LOqo/SAE-105-Angelo-Simoes?node-id=0%3A1&t=aZJ5rcz5g7La9M2G-1
 - URL Lighthouse  : https://futurist.angelo-simoes.fr/reports/information.html
-https://futurist.angelo-simoes.fr/reports/contact.html
-https://futurist.angelo-simoes.fr/reports/accueil.html
-https://futurist.angelo-simoes.fr/reports/mouvement.html
-https://futurist.angelo-simoes.fr/reports/oeuvre.html
-https://futurist.angelo-simoes.fr/reports/artist.html
+- https://futurist.angelo-simoes.fr/reports/contact.html
+- https://futurist.angelo-simoes.fr/reports/accueil.html
+- https://futurist.angelo-simoes.fr/reports/mouvement.html
+- https://futurist.angelo-simoes.fr/reports/oeuvre.html
+- https://futurist.angelo-simoes.fr/reports/artist.html
 
 # Structure de départ pour la SAE 105.
 
