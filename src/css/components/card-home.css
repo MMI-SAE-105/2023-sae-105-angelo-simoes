@@ -1,0 +1,36 @@
+.card {
+    margin-top: 36px;
+    position: relative;
+  }
+  
+  .card__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: -1;
+  }
+  
+  
+  .card__link {
+    color: var(--black-site);
+    text-decoration: none;
+    display: block;
+  }
+  
+  .card__caption {
+    background-color: var(--white-site);
+    padding: var(--space3x);
+    margin: 0 0 0 var(--space3x);
+  }
+  
+  .card__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .card__excerpt {
+
+  }

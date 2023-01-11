@@ -23,6 +23,7 @@
     font-family: var(--font-website);
     color: var(--black-site);
     font-size: var(--heading-2);
+    margin-top: 2rem;
   }
 
   .article__img-caption {
@@ -30,4 +31,10 @@
     font-family: var(--font-website);
     font-size: var(--text-legend);
     text-align: center;
+  }
+
+  .article__img-artiste{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }

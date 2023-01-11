@@ -30,6 +30,7 @@ Soyez attentifs à l'ordre d'import :
 /* Composants */
 @import "/src/css/components/menu.css";
 @import "/src/css/components/frise.css";
+@import "/src/css/components/card-home.css";
 
 /* Pages */
 
@@ -39,4 +40,5 @@ Soyez attentifs à l'ordre d'import :
 /*Layout */
 @import "/src/css/layout/footer.css";
 @import "/src/css/layout/header.css";
-@import "/src/css/layout/article.css"
+@import "/src/css/layout/article.css";
+@import "/src/css/layout/section.css";

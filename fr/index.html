@@ -46,9 +46,33 @@
 </header>
 <!-- Fin de l'en-tête de page -->
 
-    <main>
+<main class="container">
+    <p class="article__header-text">Notre nouvelle exposition temporaire du 13 avril au 23 juin 2021 sera sur le cubo-futurisme .</p>
+    
+    <section class="section container"
+    x-data="{ 'cards' : async ()=> {
+      const resp = await fetch('/src/data/card-home.json');
+      return await resp.json();
+    }}">
+    <h2 class="article__header-text">Retrouvez toutes les informations ici ! </h2>
 
-    </main>
+    <template x-for="card in cards" :key="card.id">
+        <article class="section__card card">    
+            <div class="card__img">
+                <img :src="card.picture" :alt="card.picture_desc">
+            </div>
+
+            <div class="card__caption">
+                <h1 class="card__title" x-text="card.title"></h1>
+                <p class="card__excerpt" x-text="card.excerpt"></p>
+                <a class="card__link" :href="card.link">Plus d'info</a>
+            </div>
+        </article>
+    </template>
+
+</section>
+
+</main>
 
     <footer class="footer">
         <a class="footer__lien-title" href="/fr/index.html">

@@ -1,0 +1,29 @@
+
+   
+[
+    {
+      "id": 1,
+      "title": "Le cubo-futurisme",
+      "excerpt": "Le terme de cubo-futurisme désigne l'originalité de l'interprétation par les artistes russes entre 1910 et 1915.",
+      "link": "/fr/cubo-futurisme.html",
+      "picture": "/public/img/autres/cubo-futurisme-presentation.webp",
+      "picture_desc": "Tableau Victory Battle"
+    },
+    {
+      "id": 2,
+      "title": "Informations",
+      "excerpt": "Retrouver toutes les informations à propos de notre exposition temporaire sur le cubo-futurisme!",
+      "link": "/fr/information.html",
+      "picture": "/public/img/autres/f-cartier.webp",
+      "picture_desc": "Bâtiment fondation Cartier"
+    },
+    {
+      "id": 3,
+      "title": "Billeterie",
+      "excerpt": "Achetez vos place pour l’exposition sur notre billeterie en ligne.",
+      "link": "#",
+      "picture": "/public/img/autres/f-cartier-interieur.webp",
+      "picture_desc": "Fondation Cartier de l'intérieur"
+    }
+  
+  ]
