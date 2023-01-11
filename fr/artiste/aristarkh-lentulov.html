@@ -58,11 +58,32 @@
 
         <h2 class="article__subheading">Quelques unes de ses oeuvres</h2>
         <p class="article__text">Voici une liste des oeuvres que vous pouvez retrouver à notre exposition.</p>
-        <div>
-            <!--CARROUSEL OEUVRE -->
-            <img src="/public/img/oeuvre/lentoulov-moscow.webp" alt="mosocow de Aristarkh Lentoulov">
-            <img src="/public/img/oeuvre/lentoulov-portrait-of-artist.webp" alt="Portrait of Artiste de Aristarkh Lentoulov">
-        </div>
+        
+        <div x-data="{}">
+            <div class="carrousel_parent-ecrans">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <div class="carrousel-card__img">
+                            <img class="carrousel-card__img-retouch" src="/public/img/oeuvre/oeuvre-page/moscow-1913.webp" alt="Moscow de Aristarkh Lentoulov">
+                        </div>
+                        <div class="carrousel-card__caption">
+                            <h3 class="carrousel-card__title">Moscow (1913)</h3>   
+                        </div>
+                    </figure>
+                </div>
+                
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <div class="carrousel-card__img">
+                            <img class="carrousel-card__img-retouch" src="/public/img/oeuvre/oeuvre-page/portrait-of-artist-s-wife-and-daughter-1915.webp" alt="Portrait of Artist's Wife and Daughter (1915)">
+                        </div>
+                        <div class="carrousel-card__caption">
+                            <h3 class="carrousel-card__title">Portrait of Artist's Wife and Daughter (1915)</h3>  
+                        </div>
+                    </figure>
+                </div>
+            </div>
+          </div>
 
     </main>
 

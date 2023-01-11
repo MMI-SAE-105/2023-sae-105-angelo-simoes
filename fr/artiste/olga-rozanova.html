@@ -58,12 +58,31 @@
 
         <h2 class="article__subheading">Quelques unes de ses oeuvres</h2>
         <p class="article__text">Voici une liste des oeuvres que vous pouvez retrouver à notre exposition.</p>
-        <div>
-            <!--CARROUSEL OEUVRE -->
-            <img src="/public/img/oeuvre/disjunction-of-form-rozanova.webp" alt="Disjunction of forms de Olga Rozanova">
-            <img src="/public/img/oeuvre/the-factory-rozanova.webp" alt="The factory and the bridge de Olga Rozanova">
-        </div>
-
+        <div x-data="{}">
+            <div class="carrousel_parent-ecrans">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <div class="carrousel-card__img">
+                            <img class="carrousel-card__img-retouch" src="/public/img/oeuvre/oeuvre-page/the-factory.webp" alt="The factory and the bridge (1913)">
+                        </div>
+                        <div class="carrousel-card__caption">
+                            <h3 class="carrousel-card__title">The factory and the bridge (1913)</h3>   
+                        </div>
+                    </figure>
+                </div>
+                
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <div class="carrousel-card__img">
+                            <img class="carrousel-card__img-retouch" src="/public/img/oeuvre/oeuvre-page/disjunction-of-form.webp" alt="Disjunction of forms (1913)">
+                        </div>
+                        <div class="carrousel-card__caption">
+                            <h3 class="carrousel-card__title">Disjunction of forms (1913)</h3>  
+                        </div>
+                    </figure>
+                </div>
+            </div>
+          </div>
     </main>
 
     <footer class="footer">

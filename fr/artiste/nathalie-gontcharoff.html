@@ -58,11 +58,31 @@
         
         <h2 class="article__subheading">Quelques unes de ses oeuvres</h2>
         <p class="article__text">Voici une liste des oeuvres que vous pouvez retrouver à notre exposition.</p>
-        <div>
-            <!--CARROUSEL OEUVRE -->
-            <img src="/public/img/oeuvre/the-factory-rozanova.webp" alt="Portrait de Larianov de Nathalie Gontcharoff">
-            <img src="/public/img/oeuvre/the-weaver-gontcharoff.webp" alt="The weaver de Nathalie Gontcharoff">
-        </div>
+        <div x-data="{}">
+            <div class="carrousel_parent-ecrans">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <div class="carrousel-card__img">
+                            <img class="carrousel-card__img-retouch" src="/public/img/oeuvre/oeuvre-page/larianov.webp" alt="Portrait of Larianov (1912-1913)">
+                        </div>
+                        <div class="carrousel-card__caption">
+                            <h3 class="carrousel-card__title">Portrait of Larianov (1912-1913)</h3>   
+                        </div>
+                    </figure>
+                </div>
+                
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <div class="carrousel-card__img">
+                            <img class="carrousel-card__img-retouch" src="/public/img/oeuvre/oeuvre-page/the-weaver.webp" alt="The weaver (1913)">
+                        </div>
+                        <div class="carrousel-card__caption">
+                            <h3 class="carrousel-card__title">The weaver (1913)</h3>  
+                        </div>
+                    </figure>
+                </div>
+            </div>
+          </div>
 
     </main>
 
