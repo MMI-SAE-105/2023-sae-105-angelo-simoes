@@ -41,7 +41,7 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   /* Mise en forme du bouton de menu "Hamburger" */
 .menu-btn {
   position: relative;
-  z-index: 3;
+  z-index: 12;
   width: 30px; 
   background: var(--white-site); 
   border: 0;
@@ -56,16 +56,18 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   width: 100%;
   position: absolute;
   left: 0;
-  z-index: 10;
+  z-index: 12;
   transition: all .4s ease-in-out;
 }
   
 .menu-btn__bar::before {
   top: -10px;
+  z-index: 12;
 }
   
 .menu-btn__bar::after {
   top: 10px;
+  z-index: 12;
 }
 
 /* Technique pour transformer les 3 barres du bouton de menu en croix
