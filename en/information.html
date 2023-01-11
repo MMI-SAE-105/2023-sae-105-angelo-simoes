@@ -1,77 +1,106 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Informations - Futurist.</title>
 <!-- Déclaration de la feuille de style -->
-    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/css/style.css">
 <!-- Chargement de la librairie Alpine JS -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
 </head>
 <body>
 <!-- En-tête de la page -->
-<header>
-    <div>
-        <a href="/index.html">
-            <h3>Futurist.</h3>
+<header class="header container">
+
+    <div class="header__logo">
+        <a class="header__link-logo" href="/en/homepage.html">
+            <h3 class="header__logo-text">Futurist.</h3>
         </a>   
     </div>
-    <div>
-        <button></button> 
+    <div class="header__end">
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+        </button>
     <!-- Menu principal -->
-        <nav>
-            <ul>
-                <li><a href="/fr/cubo-futurisme.html">Le mouvement : Cubo-futurisme</a></li>
-                <li><a href="/fr/artiste/aristarkh-lentulov.html">Aristarkh Lentoulov</a></li>
-                <li><a href="/fr/artiste/nathalie-gontcharoff.html">Nathalie Gontcharoff</a></li>
-                <li><a href="/fr/artiste/alexandra-exter.html">Alexandra Exter</a></li>
-                <li><a href="/fr/artiste/olga-rozanova.html">Olga Rozanova</a></li>
-                <li><a href="/fr/information.html">Informations</a></li>
-                <li><a href="/fr/contact.html">Contact</a></li>
-                <li><a href="#"><img src="#" alt="icone british"></a></li>
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item_primary"><a class="menu__link" href="/en/cubo-futurisme.html">Le mouvement : Cubo-futurisme</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/artiste/aristarkh-lentulov.html">Aristarkh Lentoulov</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/artiste/nathalie-gontcharoff.html">Nathalie Gontcharoff</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/artiste/alexandra-exter.html">Alexandra Exter</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/artiste/olga-rozanova.html">Olga Rozanova</a></li>
+                <li class="menu__item_secondary"><a class="menu__link" href="/en/information.html">Informations</a></li>
+                <li class="menu__item_secondary"><a class="menu__link" href="/en/contact.html">Contact</a></li>
+                <li><a href="/en/information.html   "><img class="header__logo-lang" src="/public/img/autres/FR.webp" alt="Le drapeau français"></a></li>
             </ul>
         </nav>
     <!-- Fin du menu principal -->
-    </div>      
+    </div> 
+
+    
 </header>
 <!-- Fin de l'en-tête de page -->
 
-        <main>
+    <main>
+        <h1>Informations</h1>
+        <p>Retrouver toutes les informations à propos de notre exposition temporaire sur le cubo-futurisme !</p>
+                
+        <p>Dates de l’exposition : du 13 avril au 23 juin 2021</p>
+            
 
-        </main>
+        <p>Lieu de l’exposition : Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        <img src="/public/img/autres/map-cartier.webp" alt="carte google map fondation Cartier">
 
-    <footer>
-        <a href="/index.html">
-          <h3>Futurist.</h3>
+        <div>
+            <p>Horaires d’ouverture : Tous les jours de 11h à 20h, sauf le lundi. Nocturne le mardi, jusqu'à 22h. La fermeture des salles débute à 19h45 (21h45 les mardis).</p>
+            <p>Tarifs :</p>
+            <ul>
+                <li>Plein tarif : 11€</li>
+                <li>Tarif réduit : 7,50€</li>
+                <li>Réduction 13 - 25 ans : 5€</li>
+                <li>Fondation Cartier Pass : 18€ - 50€</li>
+                <li>Moins de 13 ans, Laissez-passer annuel, carte Icom, carte de presse, carte d'invalidité, Fondation Cartier Pass, Etudiants : Gratuit</li>
+            </ul>
+        </div>
+
+        <p>Titre de l’exposition : Futurist.</p>
+    </main>
+
+    <footer class="footer">
+        <a class="footer__lien-title" href="/index.html">
+          <h3 class="footer__title">Futurist.</h3>
         </a> 
       
         <nav>
-            <ul>
-                <li><a href="/fr/information.html">Information</a></li>
-                <li><a href="/fr/contact.html">Contact</a></li>
-                <li><a href="/fr/cubo-futurisme.html">Cubo-futurisme</a></li>
-                <li><a href="https://www.fondationcartier.com/">Fondation Cartier</a></li>
+            <ul class="list-unstyled">
+                <li><a class="footer__list-item" href="/fr/information.html">Information</a></li>
+                <li><a class="footer__list-item" href="/fr/contact.html">Contact</a></li>
+                <li><a class="footer__list-item" href="/fr/cubo-futurisme.html">Cubo-futurisme</a></li>
+                <li><a class="footer__list-item" href="https://www.fondationcartier.com/">Fondation Cartier</a></li>
             </ul>
         </nav>
       
         <div>
-            <h3>adresse</h3>
-            <p>Fondation Cartier</p>
-            <address>261 Bd Raspail<br>75014 Paris</address>
+            <h3 class="footer__subheading uppercase">adresse</h3>
+            <p class="footer__adress">Fondation Cartier</p>
+            <address class="footer__adress">261 Bd Raspail<br>75014 Paris</address>
         </div>
 
         <div>
-            <h3>nous suivre</h3>
-            <img src="#" alt="icone instagram">
-            <img src="#" alt="icone twitter">
-            <img src="#" alt="icone facebook">
+            <h3 class="footer__subheading uppercase">nous suivre</h3>
+            <ul class="footer__list list-unstyled">
+                <li><a href="https://www.instagram.com/fondationcartier/?hl=fr"><img class="footer_social-icon" src="/public/img/autres/icon-instagram.webp" alt="icone instagram"></a></li>
+                <li><a href="https://twitter.com/Fond_Cartier?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="footer_social-icon" src="/public/img/autres/icon-twitter.webp" alt="icone twitter"></a></li>
+                <li><a href="https://www.facebook.com/FondationCartier/?locale=fr_FR"><img class="footer_social-icon" src="/public/img/autres/icon-facbook.webp" alt="icone facebook"></a></li>
+            </ul>
         </div>
-        
-        <img src="#" alt="logo-fondation-cartier">
     </footer>
-    
+    <img src="/public/img/autres/fondation-cartier-logo.webp" alt="logo-fondation-cartier">
 </body>
 </html>
+

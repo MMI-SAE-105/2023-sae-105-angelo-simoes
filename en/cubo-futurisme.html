@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The cubo-futurism - Futurist.</title>
+<!-- Déclaration de la feuille de style -->
+    <link rel="stylesheet" href="/src/css/style.css">
+<!-- Chargement de la librairie Alpine JS -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs%22%3E"></script>
+</head>
+<body>
+<!-- En-tête de la page -->
+<header class="header container">
+
+    <div class="header__logo">
+        <a class="header__link-logo" href="/index.html">
+            <h3 class="header__logo-text">Futurist.</h3>
+        </a>   
+    </div>
+    <div class="header__end">
+        <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" 
+                :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+        </button>
+    <!-- Menu principal -->
+        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+            <ul class="menu__list list-unstyled">
+                <li class="menu__item_primary"><a class="menu__link" href="/en/cubo-futurisme.html">Le mouvement : Cubo-futurisme</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/artiste/aristarkh-lentulov.html">Aristarkh Lentoulov</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/artiste/nathalie-gontcharoff.html">Nathalie Gontcharoff</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/artiste/alexandra-exter.html">Alexandra Exter</a></li>
+                <li class="menu__item_primary"><a class="menu__link" href="/en/artiste/olga-rozanova.html">Olga Rozanova</a></li>
+                <li class="menu__item_secondary"><a class="menu__link" href="/en/information.html">Informations</a></li>
+                <li class="menu__item_secondary"><a class="menu__link" href="/en/contact.html">Contact</a></li>
+                <li><a href="/fr/cubo-futurisme.html"><img class="header__logo-lang" src="/public/img/autres/FR.webp" alt="Le drapeau français"></a></li>
+            </ul>
+        </nav>
+    <!-- Fin du menu principal -->
+    </div> 
+
+    
+</header>
+<!-- Fin de l'en-tête de page -->
+
+    <main>
+        <h1>Le cubo-futurisme</h1>
+        <p>Le terme de cubo-futurisme désigne l'originalité de l'interprétation par les artistes russes entre 1910 et 1915.</p>
+        <figure>
+            <img src="/public/img/autres/airplane-over-train.webp" alt="Airplane over train de Nathalie Gontcharoff">
+            <figcaption>Airplane over train - Nathalie Gontcharoff</figcaption>
+        </figure>
+        <h2>La création de ce courant d'art</h2>
+        <p>Giovanni Lista démontre que le terme « cubo-futurisme » a en fait été forgé en France lors du Salon de la Section d'Or de 1912.
+             Il est utilisé par la critique parisienne, notamment pour désigner le travail des artistes du « groupe de Puteaux » ou la création du ballet Parade de Picasso,
+              Satie et Cocteau. C’est ensuite Alexandra Exter qui, après avoir partagé l’atelier du futuriste italien Ardengo Soffici à Paris, introduit le terme en Russie.
+        </p>
+        <p>Le cubo-futurisme russe est représenté par plusieurs œuvres de Lioubov Popova, notamment [Portrait] en 1914.</p>
+        <p>Ce mouvement impulse ses idées vers l'architecture à travers son travail du mouvement et du dynamisme plastique (plan, ligne et texture.)</p>
+        
+        <h2>Frise chronologique</h2>
+
+        <div>
+              <div>
+                <p>Nathalie Gontcharoff</p>
+                <p>1881 - 1962</p>
+              </div>
+
+
+              <div>
+                <p>1882 - 1943</p>
+                <p>Aristarkh Lentulov</p> 
+              </div>
+
+              <div>
+                <p>Alexandra Exter</p>
+                <p>1882 - 1949</p> 
+              </div>
+
+              <div>
+                <p>1886 - 1918</p>
+                <p>Olga Rozanova</p> 
+              </div>
+
+          </div>
+
+        <h2>Retrouvez ces artistes à notre exposition</h2>
+        <div>
+            <!-- CARROUSEL ARTISTE -->
+            <img src="/public/img/artiste/aristarkh-lentulov.webp" alt="Aristarkh Lentulov">
+            <img src="/public/img/artiste/nathalie-gontcharoff.webp" alt="Nathalie-Gontcharoff">
+            <img src="/public/img/artiste/alexandra-exter.webp" alt="Alexandra Exter">
+            <img src="/public/img/artiste/olga-rozanova.webp" alt="Olga Rozanova">
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <a class="footer__lien-title" href="/index.html">
+          <h3 class="footer__title">Futurist.</h3>
+        </a> 
+      
+        <nav>
+            <ul class="list-unstyled">
+                <li><a class="footer__list-item" href="/fr/information.html">Information</a></li>
+                <li><a class="footer__list-item" href="/fr/contact.html">Contact</a></li>
+                <li><a class="footer__list-item" href="/fr/cubo-futurisme.html">Cubo-futurisme</a></li>
+                <li><a class="footer__list-item" href="https://www.fondationcartier.com/">Fondation Cartier</a></li>
+            </ul>
+        </nav>
+      
+        <div>
+            <h3 class="footer__subheading uppercase">adresse</h3>
+            <p class="footer__adress">Fondation Cartier</p>
+            <address class="footer__adress">261 Bd Raspail<br>75014 Paris</address>
+        </div>
+
+        <div>
+            <h3 class="footer__subheading uppercase">nous suivre</h3>
+            <ul class="footer__list list-unstyled">
+                <li><a href="https://www.instagram.com/fondationcartier/?hl=fr"><img class="footer_social-icon" src="/public/img/autres/icon-instagram.webp" alt="icone instagram"></a></li>
+                <li><a href="https://twitter.com/Fond_Cartier?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="footer_social-icon" src="/public/img/autres/icon-twitter.webp" alt="icone twitter"></a></li>
+                <li><a href="https://www.facebook.com/FondationCartier/?locale=fr_FR"><img class="footer_social-icon" src="/public/img/autres/icon-facbook.webp" alt="icone facebook"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <img src="/public/img/autres/fondation-cartier-logo.webp" alt="logo-fondation-cartier">
+</body>
+</html>
+
