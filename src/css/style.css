@@ -35,4 +35,5 @@ Soyez attentifs à l'ordre d'import :
 
 /*Layout */
 @import "/src/css/layout/footer.css";
-@import "/src/css/layout/header.css"
+@import "/src/css/layout/header.css";
+@import "/src/css/layout/article.css"

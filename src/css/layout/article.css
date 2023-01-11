@@ -1,0 +1,20 @@
+.article__title {
+    font-size: var(--heading-page);
+    font-family: var(--font-website);
+    font-weight: 500;
+    color: var(--black-site);
+  }
+
+  .article__header-text {
+    font-family: var(--font-website);
+    font-size: var(--entete--text);
+    color: var(--black-site);
+    font-weight: 400;
+  }
+
+  .article__text {
+    font-family: var(--font-website);
+    font-size: var(--text);
+    color: var(--black-site);
+    font-weight: 400;
+  }
