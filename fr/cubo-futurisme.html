@@ -98,9 +98,9 @@
             [...$refs.parent.children]
             .find(e=>e.getBoundingClientRect().x>=0)
             .id">
-            <div class="carrousel_parent-ecrans">
                 <div id="ecran-1" class="carrousel_ecran">
                     <figure>
+                        <button @click="const p =$refs.parent ;  p.scrollLeft-= p.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="Carte avant"><img src="/public/img/autres/arrow-left.svg" alt="flèche gauche"></button><button @click="const p =$refs.parent ;  p.scrollLeft+= p.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="Carte siivante"><img src="/public/img/autres/arrow-right.svg" alt="flèche droite"></button>
                         <div class="carrousel-card__img">
                             <img class="carrousel-card__img-retouch" src="/public/img/artiste/alexandra-exter.webp" alt="Alexandra Exter">
                         </div>
