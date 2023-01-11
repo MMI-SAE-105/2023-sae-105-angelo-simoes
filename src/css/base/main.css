@@ -56,3 +56,7 @@ uniquement accessible aux lecteurs vocaux (sr = screen reader) */
 .padding-bottom {
   padding-bottom: 2rem;
 }
+
+.link__unstyled{
+  color: var(--black-site);
+}

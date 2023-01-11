@@ -48,16 +48,24 @@
             <h1 class="article__title">Erreur 404 : cette page n'existe pas !</h1>
             <p class="article__text">Voici la cartographie du site :</p>
             <ul>
-                <li><a class="article__header-text" href="/fr/index.html">Accueil</a></li>
-                <li><a class="article__header-text" href="/fr/information.html">Informations</a></li>
-                <li><a class="article__header-text" href="/fr/cubo-futurisme.html">Le cubo-futurisme</a></li>
-                <li><a class="article__header-text" href="/fr/contact.html"></a>Contact</li>
+                <li><a class="article__header-text link__unstyled" href="/fr/index.html">Accueil</a></li>
+                <li><a class="article__header-text link__unstyled" href="/fr/information.html">Informations</a></li>
+                <li><a class="article__header-text link__unstyled" href="/fr/cubo-futurisme.html">Le cubo-futurisme</a></li>
+                <li><a class="article__header-text link__unstyled" href="/fr/contact.html">Contact</a></li>
                 <h2 class="article__subheading uppercase">les artistes</h2>
-                <li><a class="article__header-text" href="/fr/artiste/alexandra-exter.html">Alexandra Exter</a></li>
-                <li><a class="article__header-text" href="/fr/artiste/aristarkh-lentulov.html">Aristarkh Lentoulov</a></li>
-                <li><a class="article__header-text" href="/fr/artiste/nathalie-gontcharoff.html">Nathalie Gontcharoff</a></li>
-                <li><a class="article__header-text" href="/fr/artiste/olga-rozanova.html">Olga Rozanova</a></li>
+                <li><a class="article__header-text link__unstyled" href="/fr/artiste/alexandra-exter.html">Alexandra Exter</a></li>
+                <li><a class="article__header-text link__unstyled" href="/fr/artiste/aristarkh-lentulov.html">Aristarkh Lentoulov</a></li>
+                <li><a class="article__header-text link__unstyled" href="/fr/artiste/nathalie-gontcharoff.html">Nathalie Gontcharoff</a></li>
+                <li><a class="article__header-text link__unstyled" href="/fr/artiste/olga-rozanova.html">Olga Rozanova</a></li>
             </ul>
+            <h2>Recherche sur le site :</h2>
+            <form action="#" method="GET" 
+                x-data="{ q:'', }" 
+                x-on:submit="q = q + ' site:futurist.angelo-simoes.fr/'">
+                <label for="q">Que rechercher-vous :</label>
+                <input type="text" id="q" name="q" x-model="q">
+                <button type="submit">Rechercher</button>
+            </form>
         </main>
 
 <footer class="footer">
