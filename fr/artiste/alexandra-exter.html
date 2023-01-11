@@ -60,11 +60,33 @@
 
         <h2 class="article__subheading">Quelques unes de ses oeuvres</h2>
         <p class="article__text">Voici une liste des oeuvres que vous pouvez retrouver à notre exposition.</p>
-        <div>
-            <!--CARROUSEL OEUVRE -->
-            <img src="/public/img/oeuvre/still-life-exter.webp" alt="Still Life de Alexandra Exter">
-            <img src="/public/img/oeuvre/city-exter.webp" alt="The city de Alexandra Exter">
-        </div>
+        <div x-data="{}">
+            <div class="carrousel_parent-ecrans">
+        
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <div>
+                            <img src="/public/img/oeuvre/oeuvre-page/still-life.webp" alt="Still Life de Alexandra Exter">
+                        </div>
+                        <div >
+                            <h3>Still Life (1913)</h3>   
+                        </div>
+                    </figure>
+                </div>
+        
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <div>
+                            <img src="/public/img/oeuvre/oeuvre-page/the-city.webp" alt="City de Alexandra Exter">
+                        </div>
+                        <div>
+                            <h3>City (1913)</h3>  
+                        </div>
+                    </figure>
+                </div>
+            
+            </div>
+          </div>
 
     </main>
 
