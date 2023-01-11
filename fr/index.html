@@ -47,7 +47,7 @@
 <main class="container">
     <p class="article__header-text">Notre nouvelle exposition temporaire du 13 avril au 23 juin 2021 sera sur le cubo-futurisme .</p>
     
-    <section class="section container"
+    <section
     x-data="{ 'cards' : async ()=> {
       const resp = await fetch('/src/data/card-home.json');
       return await resp.json();
