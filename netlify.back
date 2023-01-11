@@ -1,0 +1,27 @@
+# Configuration for a plugin published to npm
+[[plugins]]
+ package = "@netlify/plugin-lighthouse"
+ 
+[[plugins.inputs.audits]]
+    output_path="reports/accueil.html"
+    path = "/fr/index.html" #la racine du site
+    
+[[plugins.inputs.audits]]
+    output_path = "reports/artist.html"
+    path = "/fr/artiste/olga-rozanova.html"
+
+[[plugins.inputs.audits]]
+    output_path = "reports/oeuvre.html"
+    path = "/fr/oeuvre/exter-still-life.html"
+
+[[plugins.inputs.audits]]
+    output_path = "reports/contact.html"
+    path = "/fr/contact.html"
+
+[[plugins.inputs.audits]]
+    output_path = "reports/information.html"
+    path = "/fr/information.html"
+
+[[plugins.inputs.audits]]
+    output_path = "reports/mouvement.html"
+    path = "/fr/cubo-futurisme.html"
